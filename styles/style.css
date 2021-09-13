@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 .main-banner {
-  /* width:1576px ; */
+  max-width:1576px ;
   margin-top: 75px;
   position: relative;
 }
@@ -21,12 +21,13 @@
   left: 96px;
   width: 157px;
   height: 157px;
+  border-radius: 50%;
+  border: 5px solid white;
 }
 .profile-image {
   width: 100%;
   height: auto;
-  border-radius: 50%;
-  border: 5px solid white;
+
 }
 .title-content {
   margin-top: 95px;
