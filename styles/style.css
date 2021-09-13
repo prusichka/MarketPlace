@@ -6,11 +6,14 @@
   margin: 0 auto;
 }
 .main-banner {
-  background-image: url(../image//main-banner.jpg);
-  background-position: center;
-  position: relative;
-  height: 457px;
+  /* width:1576px ; */
   margin-top: 75px;
+  position: relative;
+}
+.main-banner-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 .user-image {
   position: absolute;
@@ -21,7 +24,9 @@
 }
 .profile-image {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid white;
 }
 .title-content {
   margin-top: 95px;
@@ -76,7 +81,7 @@
 .title-content li {
   margin-left: 30px;
 }
-.title-content button {
+.title-content a {
   padding: 10px 82px;
   font-family: "Nunito Sans", sans-serif;
   font-style: normal;
@@ -86,7 +91,8 @@
   text-align: center;
   color: #ffffff;
   background-color: #1e92fe;
-  border: none;
+  border-radius: 5px;
+  text-decoration: none;
 }
 .content-title,
 .content-main {
@@ -119,6 +125,10 @@
   color: #ffffff;
   padding-right: 23px;
 }
+.content-nav a {
+  text-decoration: none;
+  color: white;
+}
 #item2,
 #item3 {
   padding-left: 23px;
@@ -127,7 +137,8 @@
   border-left: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
 }
-.content-nav ul li:hover {
+#item1,
+.content-nav a {
   cursor: pointer;
   color: #1e92fe;
 }
@@ -229,6 +240,15 @@
   color: #00193f;
   margin: 0;
 }
+.card-item-username-grade svg {
+  margin-right: 6px;
+}
+.none-active {
+  fill: white;
+}
+.active {
+  fill: #FABA58;
+}
 .card-item-top {
   display: flex;
   flex-direction: row;
@@ -266,13 +286,18 @@
   color: #1e92fe;
   text-decoration: none;
 }
-.btn-play button {
-  background-image: url("../image//btn-play.png");
+.btn-play {
+  background-color: #1E92FE;
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-play img {
+  margin-left: 8px;
 }
 .btn-play-title {
   font-family: "Nunito Sans", sans-serif;
@@ -286,11 +311,19 @@
   padding-top: 22px;
   padding-bottom: 22px;
 }
-.btn-small button {
-  background-image: url("../image//btn-play-sm.png");
+.btn-small{
+  background-color: #1E92FE;
   width: 40px;
   height: 40px;
   margin-right: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-small img {
+  margin-left: 5px;
 }
 .music-list {
   display: flex;
@@ -317,6 +350,7 @@
   text-align: right;
   padding-right: 30px;
   color: #1e92fe;
+  text-decoration: none;
 }
 .card-five p {
   font-style: normal;
